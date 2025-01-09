@@ -13,15 +13,15 @@ def main(stdscr):
     stdscr.addstr(5,10,"1] X or O")
     stdscr.addstr(6,10,"2] Chess")
     stdscr.refresh()
-    # wind=curses.newwin(1,20,15,50)
-    # for i in range(100):
-    #     wind.clear()
-    #     try:
-    #         wind.addstr(f"Loading {i}% ---", BLUE_AND_CYAN)
-    #         wind.refresh()
-    #         time.sleep(0.01)
-    #     except curses.error:
-    #         pass
+    wind=curses.newwin(1,20,15,50)
+    for i in range(100):
+        wind.clear()
+        try:
+            wind.addstr(f"Loading {i}% ---", BLUE_AND_CYAN)
+            wind.refresh()
+            time.sleep(0.01)
+        except curses.error:
+            pass
     pad=curses.newpad(100,100)
     for i in range(100):
         for j in range(26):
